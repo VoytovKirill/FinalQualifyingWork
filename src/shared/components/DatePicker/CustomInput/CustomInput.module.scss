@@ -1,0 +1,19 @@
+.calendar input {
+  color: #3B3B3B !important;
+}
+
+.calendar__date {
+  position: relative;
+  max-width: 230px;
+}
+
+.calendar__icon {
+  z-index: 2;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+}
+
+.isInvalid {
+  border: 1px solid #E4003A !important;
+}

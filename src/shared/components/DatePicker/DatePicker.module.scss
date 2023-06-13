@@ -1,0 +1,68 @@
+.filter__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.filter__group+.filter__group {
+  margin-top: 32px;
+}
+
+.filter__group .filter__group {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.calendar__date {
+  position: relative;
+  max-width: 230px;
+}
+
+.calendar__icon {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+}
+
+.center {
+  display: flex;
+}
+
+.calendar__input input {
+  background-color: white;
+  color: #3C3C3B;
+
+  &::placeholder {
+    color: #B7BABD;
+  }
+}
+
+.taxes {
+  .calendar__input input {
+    background-color: white;
+    color: #3C3C3B;
+    width: 175px;
+    border: none;
+  }
+}
+
+.add_profit_form {
+  .calendar__input input {
+    background-color: white;
+    color: #3C3C3B;
+    width: 191px;
+    border: none;
+    padding-left: 25px;
+  }
+}
+
+.additional-expenses [class='react-datepicker-wrapper'] input {
+  color: #3C3C3B;
+}

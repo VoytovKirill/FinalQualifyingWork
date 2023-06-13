@@ -1,0 +1,85 @@
+.userBar {
+    position: relative;
+
+    @media (--M) {  
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+    }
+
+    &__notification {
+        border-radius: 100%;
+        box-sizing: border-box;
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        background-color: #E6F7F3;
+        color: #00A783;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition-property: border-color, box-shadow;
+        transition-duration: .25s;
+        transition-timing-function: ease;
+
+        &:hover {
+            border-color: #00A783;
+            box-shadow: 0px 0px 9px rgba(0, 165, 129, 0.45);
+        }
+
+        & button {
+          background-color: transparent;
+          &:focus{
+            box-shadow:none;
+          }
+        }
+
+        &Icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        &Sign {
+            position: absolute;
+            box-sizing: border-box;
+            top: 0;
+            right: 0;
+            background-color: #E4003A;
+            border: 1px solid #FFF;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+        }
+        
+
+    }
+
+    &__notificationDisabled{
+        background-color: #F8F7F7;
+        &:hover{
+          border-color: transparent;
+          box-shadow: none;
+        }
+        & button {
+          color: #CFD2D3
+        }
+    }
+
+    &__info {
+        margin-left: 18px;
+    }
+
+    &__name {
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 500;
+        white-space: nowrap;
+        color: #33443F;
+    }
+
+}

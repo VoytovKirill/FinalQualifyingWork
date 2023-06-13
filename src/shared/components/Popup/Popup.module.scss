@@ -1,0 +1,101 @@
+.popup {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-top: 8px;
+    min-width: 189px;
+    display: block;
+    background: #fff;
+    box-shadow: 0px 0px 9px rgba(0, 165, 129, 0.45);
+    border: 1px solid #00A783;
+    border-radius: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        text-align: left;
+        font-family: var(--default-font);
+    }
+
+    &__icon {
+        margin-right: 8px;
+        width: 17px;
+        height: 15px;
+        margin-top: -2px;
+    }
+
+    &_role {
+        width: calc(100% - 54px);
+
+    }
+    &_source, &_event{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &_search {
+        width: calc(438px);
+        z-index: 100;
+        padding: 0;
+        max-height: 152px;
+        overflow-y: scroll;
+        margin-top: 5px;
+        
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        button {
+            min-height: 50px;
+        }
+    }
+
+    & button {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        height: 38px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition-property: color, background-color;
+        transition-duration: .25s;
+        transition-timing-function: ease;
+        border: none;
+        outline: none;
+        background-color: #fff;
+
+        &:hover {
+            background-color: var(--fadeLighter);
+        }
+    }
+
+    &_year {
+        top: 150%;
+        z-index: 3;
+        border: 1px solid #fff;
+        box-shadow: 0px 4px 27px rgba(24, 161, 132, 0.08);
+        min-width: 113px;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        & button {
+            border-radius: 7px 7px 0px 0px;
+            padding: 8px 0;
+            justify-content: center;
+        }
+    }
+}

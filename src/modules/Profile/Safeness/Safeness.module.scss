@@ -1,0 +1,64 @@
+.safeness {
+    margin-left: 56px;
+    width: 694px;
+
+    &__switch {
+        padding-right: 180px;
+        box-sizing: border-box;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        button {
+            width: 222px;
+        }
+    }
+    &__box:last-of-type{
+        margin-bottom:50px;
+    }
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    h2:last-of-type {
+        margin-bottom: 32px;
+        margin-top: 40px;
+    }
+
+    h3 {
+        font-family: var(--font-montserrat);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(----dark-shade);
+        margin-bottom: 16px;
+    }
+
+    h4 {
+        font-family: var(--font-montserrat);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(----dark-shade);
+        margin-bottom: 16px;
+    }
+
+    &__paragraf {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 404px;
+        color: var(--shadeLight);
+        margin-bottom: 20px;
+    }
+    &__paragraf_autoBlock{
+
+    }
+
+}

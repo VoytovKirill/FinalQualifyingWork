@@ -1,0 +1,31 @@
+.message {
+    margin-top: 70px;
+    
+    &__box {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        color: #00A783;
+    }
+
+    &__text {
+        font-weight: 500;
+
+        & p {
+            margin-top: 10px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__image {
+        max-width: 485px;
+        margin-top: 71px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,97 @@
+.popup {
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: var(--font-montserrat);
+
+  &__item {
+    box-sizing: border-box;
+    width: 650px;
+    margin: auto;
+    border-radius: 16px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+
+    &:focus {
+      color: red
+    }
+
+    &_green {
+      width: 513px;
+      background-color: #F2FBF9;
+    }
+
+    &_confirmation {
+      background-color: #fff;
+      height: 200px;
+      width: 383px;
+      box-sizing: border-box;
+      padding: 44px 46px;
+      font-family: var(--font-montserrat);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    &_delete {
+      background-color: #fff;
+      width: 383px;
+      box-sizing: border-box;
+      padding: 44px 46px;
+    }
+  }
+}
+
+
+
+.blockedScreen {
+  background: url('~/src/assets/images/cover/background.svg');
+
+}
+
+.popup__item_blockedCode {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.additionalExpenses,
+.additionalExpenses_active {
+  width: 100%;
+}
+
+.popup__item_additionalExpenses,
+.popup__item_additionalExpenses_active {
+  width: 650px;
+  background-color: #fff;
+
+  & form {
+    padding: 48px 70px 48px 60px;
+  }
+}
+
+.popup__item_additionalExpenses_active {
+  overflow: visible;
+ padding-bottom: 150px;
+}
+
+.popup__item_calculation {
+  padding: 48px 40px;
+  background-color: #fff;
+  overflow: visible;
+}

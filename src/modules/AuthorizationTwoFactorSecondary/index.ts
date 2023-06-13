@@ -1,0 +1,1 @@
+export {AuthorizationTwoFactorSecondary} from './AuthorizationTwoFactorSecondary';

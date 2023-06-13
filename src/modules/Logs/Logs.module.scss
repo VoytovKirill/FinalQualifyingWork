@@ -1,0 +1,24 @@
+@import '../../assets/styles/reusable.scss';
+
+.logs {
+    &__heading {
+        margin: 120px auto 40px auto;
+        box-sizing: border-box;
+        @include title;
+        @include box;
+    }
+
+    &__filters {
+        margin-top: 28px;
+        display: flex;
+        gap: 48px;
+
+        &__datePicker {
+            width: 250px;
+        }
+
+
+ 
+    }
+
+}

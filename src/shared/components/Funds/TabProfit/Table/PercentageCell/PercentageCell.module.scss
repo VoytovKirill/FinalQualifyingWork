@@ -1,0 +1,23 @@
+.wrapper {
+  padding: 14px 6px;
+}
+
+.button {
+  background-color: transparent;
+  color: #00CB9F;
+  width: 24px;
+  height: 24px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 99;
+  background: none;
+  padding: 6px;
+
+  svg {
+    color: #99DCCD;
+  }
+}

@@ -1,0 +1,122 @@
+@import 'assets/styles/reusable.scss';
+
+.title {
+    @include title;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.subtitle {
+    @include title;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.details {
+    font-weight: 500;
+    line-height: 140%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    &__inputBox {
+        svg{
+            margin-right: 20px;
+        }
+        & .input {
+          padding-right: 50px;
+        }
+    
+      }
+
+    &__currencyLabel {
+        margin-left: -25px;
+    }
+
+    &__profit {
+        padding: 6px 10px;
+        gap: 10px;
+        width: 136px;
+        height: 36px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 151%;
+        color: var(----dark-shade);
+
+        &:focus {
+            box-shadow: 0 0 0 2px var(--fadeLight);
+            border-color: var(--accentGreen);
+        }
+
+        &::placeholder {
+            color: var(--shadeLightest);
+            line-height: 20px;
+            text-align: left;
+            font-family: var(--font-montserrat);
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+    }
+
+    &__profit_error,
+    &__profit_error:focus {
+        border: 1px solid var(--warning);
+        box-shadow: none
+    }
+}
+
+.field {
+    display: flex;
+    justify-content: start;
+    gap: 42px;
+    align-items: center;
+
+    &>label {
+        min-width: 74px;
+    }
+
+    &__allFunds {
+      input {
+        border: 1px solid #D0D4D8 !important;
+        border-radius: 8px;
+      }
+    }
+}
+
+.btn {
+    margin-top: 6px;
+    max-width: 175px;
+}
+
+.radioBtn {
+    width: 43px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    max-width: 400px;
+    justify-content: space-between;
+
+
+    &__allFunds{
+        justify-content: flex-end;
+        gap:24px;
+    }
+
+    button{
+        min-width: 155px
+    }
+}

@@ -1,0 +1,35 @@
+.form {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+
+        & input {
+            width: 100%;
+            max-width: 364px;
+        }
+    }
+
+    &__item:last-of-type {
+        margin-top: 32px;
+        justify-content: end;
+    }
+
+    &__error {
+        position: absolute;
+        left: 33.5%;
+        padding-top: 8px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: calc(15 / 12);
+        color: #F9344B;
+    }
+    &__notError {
+        margin-bottom: 32px;
+    }
+
+    &__onError {
+        margin-bottom: 0;
+    }
+}

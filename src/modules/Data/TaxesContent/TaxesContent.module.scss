@@ -1,0 +1,18 @@
+@import 'assets/styles/reusable.scss';
+
+.rates {
+  margin-top: 42px;
+  font-family: Montserrat;
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include title;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}

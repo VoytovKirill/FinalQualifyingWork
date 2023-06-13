@@ -1,0 +1,46 @@
+.form {
+  position: relative;
+
+  &__text {
+    padding-bottom: 24px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  &__btn {
+    min-width: 139px;
+
+    &_pale {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding-right: 10px;
+      transition: 0.25s ease;
+    }
+
+    &_pale:hover,
+    &_pale:focus {
+      color: var(--auxiliaryLight);
+      box-shadow: none;
+    }
+
+    &_pale:active {
+      box-shadow: none;
+      color: var(--accentGreen)
+    }
+  }
+
+  &__btnBox {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+}

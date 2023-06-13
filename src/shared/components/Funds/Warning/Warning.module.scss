@@ -1,0 +1,53 @@
+.note {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 2px;
+  position: relative;
+  cursor: pointer
+}
+
+.report__note {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.note:hover .note__text {
+  display: block;
+}
+
+.note__icon {
+  margin-top: -4px;
+  color: #00A783;
+}
+
+.note__text {
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  -webkit-transform: translate(-1px, 4px);
+  -ms-transform: translate(-1px, 4px);
+  transform: translate(-1px, 4px);
+  background-color: #00A783;
+  -webkit-box-shadow: 0px 4px 27px rgba(24, 161, 132, 0.08);
+  box-shadow: 0px 4px 27px rgba(24, 161, 132, 0.08);
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(18 / 12);
+  color: #fff;
+  z-index: 2;
+  width: 189px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none;
+}
+
+.noteWarning .note__icon {
+  color: #E4003A;
+}
+
+.noteWarning .note__text {
+  background-color: #E4003A;
+}

@@ -1,0 +1,123 @@
+.form-authtorisation {
+  margin-top: 38px;
+}
+
+.form-authtorisation__item {}
+
+.form-authtorisation__button {
+  margin-top: 40px;
+}
+
+.form__item {
+  position: relative;
+  margin-top: 22px
+}
+
+.form__item:first-child {
+  margin-top: 0;
+}
+
+.ctrlButton {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 13px 22px 15px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  -webkit-transition-property: background-color, border-color, -webkit-box-shadow;
+  transition-property: background-color, border-color, -webkit-box-shadow;
+  -o-transition-property: background-color, box-shadow, border-color;
+  transition-property: background-color, box-shadow, border-color;
+  transition-property: background-color, box-shadow, border-color, -webkit-box-shadow;
+  -webkit-transition-duration: .25s;
+  -o-transition-duration: .25s;
+  transition-duration: .25s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease
+}
+
+.ctrl-button:visited {}
+
+.ctrl-button:hover {}
+
+.ctrl-button:focus {
+  outline: none;
+}
+
+.ctrl-button:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.eyeButton {
+  border-radius: 100%;
+  color: #00A783;
+  background-color: #E6F7F3;
+  padding: 0;
+}
+
+.form__inputButton {
+  position: absolute;
+  top: 35px;
+  right: 16px;
+}
+
+.ctrlButton__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.ctrlButton__text {}
+
+.ctrlButton__icon {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.form__error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding-top: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: calc(15 / 12);
+  color: #F9344B;
+}
+
+.ctrlButtonColorGreen {
+  background-color: #00A783;
+  color: #fff;
+}
+
+.form__button {
+  width: 100%;
+}
+
+.form__input-box {
+  position: relative
+}

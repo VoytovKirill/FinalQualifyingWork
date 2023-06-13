@@ -1,0 +1,267 @@
+@import "../Icon/Icon.module.scss";
+
+.ctrlButton {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 13px 22px 15px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 600;
+  font-family: var(--font-montserrat);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition-property: background-color, box-shadow, border-color;
+  transition-duration: .5s;
+  transition-timing-function: ease;
+
+  &:visited {}
+
+  &:hover {}
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 9px rgba(0, 165, 129, 0.45);
+  }
+
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+  }
+
+  &__text {}
+
+  &_icon {
+    border-radius: 100%;
+    color: #00A783;
+    background-color: #E6F7F3;
+    padding: 0;
+
+    &:hover {}
+
+    &:active {}
+
+    &:disabled,
+    &.is-disabled {}
+
+    & .ctrlButton__text {
+      font-size: 0;
+      visibility: hidden;
+    }
+
+    & .ctrlButton__icon {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &_color {
+
+    &Pale {
+      background: none;
+      color: #CFD2D3;
+      font-weight: 600;
+    }
+
+    &Green {
+      background-color: #00A783;
+      color: #fff;
+
+      &:hover {
+        background-color: #00CB9F;
+      }
+
+      &:active {
+        background-color: #00795F;
+      }
+
+      &:disabled,
+      &.isDisabled {
+        background-color: #D0D4D8;
+        color: #F8F7F7;
+      }
+    }
+
+    &LightGreen {
+      background-color: #E6F7F3;
+      color: #00A783;
+      border: 1px solid transparent;
+
+      &:hover {
+        background-color: #E6F7F3;
+        border-color: #00A783;
+      }
+
+      &:active {
+        background-color: #B3E5DA;
+        border-color: #00A783;
+      }
+
+      &:disabled,
+      &.isDisabled {
+        background-color: #F8F7F7;
+        color: #B7BABD;
+        border-color: transparent;
+      }
+    }
+
+    &Transparent {
+      background-color: transparent;
+      color: #00A783;
+
+      &:hover {
+        background-color: #00A783;
+        color: #fff;
+      }
+
+      &:active {
+        background-color: #00795F;
+        color: #fff;
+      }
+
+      &:disabled,
+      &.isDisabled {
+        background-color: transparent;
+        color: #D0D4D8;
+      }
+    }
+  }
+
+  &_reverse {
+
+    & .ctrlButton__icon {
+      order: -1;
+      margin-right: 8px;
+      margin-left: 0;
+    }
+  }
+
+
+}
+
+.ctrlButton.ctrlButton_delete {
+  box-sizing: border-box;
+  padding: 0;
+  width: 48px;
+  height: 56px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+  background-color: #F2FBF9;
+
+  & svg {
+    color: var(--fade);
+    background-color: transparent;
+    transition: 0.25s ease;
+  }
+
+  &:hover,
+  &:active {
+    background-color: #E6F7F3;
+    border: none;
+    outline: none;
+
+    & svg {
+      color: var(--accentGreen);
+    }
+  }
+}
+
+.ctrlButton.ctrlButton_recovery {
+  box-sizing: border-box;
+  padding: 0;
+  width: 48px;
+  height: 58px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+  background-color: #F2FBF9;
+
+  & svg {
+    transition: 0.25s ease;
+  }
+
+  &:hover,
+  &:active {
+    background-color: #E6F7F3;
+    border: none;
+    outline: none;
+
+    & svg {
+      color: var(--accentGreen) !important;
+
+    }
+  }
+}
+
+
+.ctrlButton.ctrlButton_withoutBg {
+  background-color: transparent;
+  color: #00A783;
+  border: none;
+  transition: .5s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #00A783;
+    border: none;
+    box-shadow: none;
+
+    & .ctrlButton__text {
+      text-shadow: 0 0 5px rgb(0 165 129 / 45%);
+    }
+  }
+
+  &:disabled,
+  &.isDisabled {
+    color: #B7BABD;
+  }
+}
+
+.ctrlButton.ctrlButton_lock {
+  width: 36px;
+  height: 36px;
+  border-radius: 17px;
+  margin-right: 17px;
+  color: var(--accentGreen);
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition-property: border-color, box-shadow;
+  transition-duration: .25s;
+  transition-timing-function: ease;
+
+  &:hover {
+    border-color: #00A783;
+    box-shadow: 0px 0px 9px rgba(0, 165, 129, 0.45);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &:disabled {
+      color: #D0D4D8;
+    background-color: #F8F7F7;
+    &:hover {
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+}

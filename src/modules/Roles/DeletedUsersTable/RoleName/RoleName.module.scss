@@ -1,0 +1,10 @@
+.role{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--shadeLight);
+    &__icon{
+        background-color: #F8F7F7;
+        margin-right: 23px;
+    }
+}

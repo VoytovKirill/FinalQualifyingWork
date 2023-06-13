@@ -1,0 +1,1 @@
+export {DoubleRate} from './DoubleRate';

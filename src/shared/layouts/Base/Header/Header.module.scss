@@ -1,0 +1,40 @@
+@import '../../../../assets/styles/reusable.scss';
+
+.header {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0px 1px 13px rgba(171, 207, 219, 0.25);
+
+    @media (--L) {
+        z-index: 101;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        flex-shrink: 0;
+    }
+
+    &__nav {
+        margin-left: 70px;
+    }
+
+    &__box {
+        @include box;
+    }
+}

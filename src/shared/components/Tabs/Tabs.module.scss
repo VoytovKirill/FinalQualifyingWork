@@ -1,0 +1,85 @@
+.tabs {
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@mixin horizontal {
+  .tabs__container {
+    display: flex;
+  }
+
+  .tabs__tab {
+    padding: 10px 24px;
+    color: #99dccd;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 3px solid #99dccd;
+    transition-property: background-color, color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--accentGreen);
+    }
+
+    &_isActive {
+      border-bottom-color: #00a783;
+      color: #33443f;
+    }
+  }
+}
+
+.salary {
+  @include horizontal;
+}
+
+.profile {
+  .tabs__body {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .tabs__container {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 151.4%;
+    color: #3C3C3B;
+    flex-direction: column;
+    border-right: 1px solid var(--accentGreen);
+    height: calc(100vh - 80px - 155px);
+    min-height: 200px;
+  }
+
+  .tabs__tab {
+    cursor: pointer;
+    width: 220px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #33443F;
+
+    &_isActive {
+      border-right: 3px solid var(--accentGreen);
+      color: var(--accentGreen);
+      font-weight: 600;
+      background-color: var(--sfadeLightest);
+    }
+  }
+}
+
+.fundsProfit {
+  @include horizontal;
+
+  .tabs__container {
+    position: relative;
+    bottom: 194px;
+  }
+}

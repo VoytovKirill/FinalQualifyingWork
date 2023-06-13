@@ -1,0 +1,114 @@
+.setup {
+    max-width: 720px;
+    margin: 0 auto 0 0;
+    font-family: var(--font-montserrat);
+    color: var(--dark-shade);
+
+    &__container {
+        max-width: 492px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        margin: 45px 0 40px 0;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        margin: 0;
+        margin-bottom: 22px;
+    }
+
+    &__textcontent {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 151.4%;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    &__input {
+        width: 67px;
+
+        &__input:first-of-type {}
+    }
+
+    &__field:first-of-type {
+        margin-bottom: 14px;
+    }
+
+    &__field:nth-of-type(2) {
+        margin-bottom: 56px;
+        position: relative;
+    }
+
+    &__error {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding-top: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: calc(15 / 12);
+        color: #F9344B;
+    }
+
+    &__button {
+        width: 210px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 40px
+    }
+
+    &__form_profile &__field {
+
+        display: flex;
+        max-width: 405px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    &__form_profile &__buttons {
+        margin-top: 32px;
+        margin-bottom: 48px;
+        justify-content: end;
+        max-width: 405px;
+
+    }
+
+    &__form_profile &__button {
+        max-width: 139px;
+
+    }
+}
+
+.screen {
+    height: 100vh;
+    min-width: 1320px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.isInvalid {
+    input {
+        border-color: var(--warning);
+    }
+
+    input:focus {
+        border: 1px solid var(--warning);
+        box-shadow: 0px 0px 9px #FFB9CB;
+    }
+}

@@ -1,0 +1,24 @@
+.loaderContainer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter__container {
+  display: flex;
+  gap: 32px;
+}
+
+.salary {
+  &__group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex-grow: 1;
+  }
+
+}

@@ -1,0 +1,29 @@
+.buttonsGroup {
+    margin-top: 21px;
+    width: 295px;
+    gap: 17px;
+    display: flex;
+    justify-content: space-between;
+
+    button:first-child {
+        height: 50px;
+        width: 139px;
+        background-color: var(--accentGreen);
+        color: var(--bg);
+    }
+
+    button:hover:first-child {
+        background-color: var(--auxiliaryDark);
+    }
+
+    button:last-child {
+        width: 139px;
+        height: 50px;
+        background-color: var(--fadeLighter);
+        color: var(--accentGreen);
+    }
+
+    button:hover:last-child {
+        background: var(--fadeLight);
+    }
+}

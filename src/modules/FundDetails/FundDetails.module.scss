@@ -1,0 +1,224 @@
+@import 'assets/styles/reusable.scss';
+
+.pageBack {
+  &__button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 32px;
+
+    .reverse__icon {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.title {
+  @include title;
+}
+
+.pageHeading {
+  margin-top: 41px;
+  margin-bottom: 31px;
+
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__tags {
+    padding-left: 5px;
+
+    &_item {
+      display: inline-block;
+      vertical-align: middle;
+      background: #F2FBF9;
+      border-radius: 29px;
+      padding-top: 8px;
+      padding-bottom: 10px;
+      padding-left: 24px;
+      padding-right: 24px;
+      margin-left: 8px;
+      margin-right: 8px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    &_item {
+      padding: 10px 24px;
+      color: #99DCCD;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 3px solid #99DCCD;
+      transition-property: background-color, color;
+      transition-duration: .25s;
+      transition-timing-function: ease;
+
+      &:hover {
+        color: #33443F;
+      }
+
+      &.isActive {
+        border-bottom-color: #00A783;
+        color: #33443F;
+      }
+    }
+  }
+}
+
+.fundCard {
+  margin-bottom: 60px;
+  margin-top: 26px;
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -30px;
+  }
+
+  &__item {
+    background: #E6F7F3;
+    border-radius: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 50%;
+    margin-left: 30px;
+    box-sizing: border-box;
+
+    &_costs {
+      background-color: #F2FBF9;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    font-weight: 500;
+    max-width: 350px;
+
+    & p {
+      margin-top: 14px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__details {
+    font-weight: 500;
+    line-height: 140%;
+
+    &_profit {
+      margin-top: 30px;
+    }
+
+    &Line {
+      margin-top: 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &_warning {
+        color: #E4003A;
+      }
+
+      &_success {
+        color: #00A783;
+      }
+
+      &_info {
+        color: #00A1DF;
+      }
+
+      &_ap {
+        color: #FAB526;
+      }
+
+      &_expenses {
+        margin-top: 4px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__editData {
+    min-width: 158px;
+    background-color: #FFF;
+    border-radius: 8px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    max-width: 100px;
+    background-color: #FFF;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+    padding-left: 15px;
+  }
+
+  &__ruble {
+    margin-left: 5px;
+  }
+
+  &__editButton {
+    background-color: transparent;
+    margin-left: 8px;
+  }
+}
+
+.filter {
+  margin-top: 24px;
+
+  &_withLoader {
+    min-height: 417px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.datapicker {
+  max-width: 228px;
+
+
+}

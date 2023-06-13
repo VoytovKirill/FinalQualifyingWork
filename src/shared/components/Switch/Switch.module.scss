@@ -1,0 +1,120 @@
+.switch {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    display: flex;
+    cursor: pointer;
+
+    .profile & {
+      width: 100%;
+      justify-content: space-between;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+
+}
+
+.switch input[type=checkbox]:checked+.switch__switcher,
+.switch.switch__input:checked+.switch__switcher {
+  background-color: #E6F7F3;
+  border-color: #00A783
+}
+
+.allFounds input[type=checkbox]+.switch__switcher,
+.switch.switch__input+.switch__switcher {
+  background-color: #E6F7F3;
+  border-color: #00A783
+}
+
+
+.switch__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-left: 20px;
+
+  &_left {
+    margin-right: 20px;
+  }
+
+  .profile & {
+    margin: 0;
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(----dark-shade);
+  }
+}
+
+.toggle-button__text:first-child {
+  margin-left: 0;
+}
+
+input[type=checkbox],
+.switch__input {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute
+}
+
+input[type=checkbox]:checked+.switch__switcher,
+.switch__input:checked+.switch__switcher {
+  background: #E6F7F3;
+  border-color: #00A783;
+  -webkit-box-shadow: 0 0 0 2px #b3e5da;
+  box-shadow: 0 0 0 2px #b3e5da;
+
+  .allFounds & {
+    box-shadow: none;
+  }
+}
+
+input[type=checkbox]:checked+.switch__switcher:after,
+.switch__input:checked+.switch__switcher:after {
+  left: calc(100% - 2px);
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background: #00A783;
+}
+
+.switch__switcher {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 42px;
+  height: 24px;
+  background: #F8F7F7;
+  border: 1px solid #D0D4D8;
+  border-radius: 37px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative
+}
+
+.switch__switcher:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  background: #D0D4D8;
+  border-radius: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+  .allFounds & {
+    background: #00A783;
+  }
+}
+
+.switch__switcher:active:after {
+  width: 24px;
+}

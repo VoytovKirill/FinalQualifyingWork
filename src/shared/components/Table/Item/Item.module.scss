@@ -1,0 +1,41 @@
+.event {
+    border-radius: 43px;
+    width: 134px;
+    margin: 10px 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+
+    span {
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+
+
+    &_report {
+        background-color: rgba(250, 181, 38, 0.3);
+    }
+
+    &_update {
+        background-color: rgba(0, 161, 223, 0.3);
+    }
+
+    &_login {
+        background-color: #FCE5EB;
+    }
+
+    &_expenses {
+        background-color: rgba(228, 0, 58, 0.3);
+    }
+
+    &_roles {
+        background-color: #B3E5DA;
+    }
+    &_any {
+        background-color:#f5fce5;
+    }
+
+}

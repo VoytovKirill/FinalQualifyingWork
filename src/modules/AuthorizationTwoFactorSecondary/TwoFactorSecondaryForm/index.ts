@@ -1,0 +1,1 @@
+export {TwoFactorSecondaryForm} from './TwoFactorSecondaryForm';

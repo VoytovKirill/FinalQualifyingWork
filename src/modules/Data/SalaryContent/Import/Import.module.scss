@@ -1,0 +1,187 @@
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: Montserrat;
+  line-height: calc(29 / 24);
+}
+
+.ratesImport {
+  margin-top: 42px;
+  margin-bottom: 40px;
+
+  &__box {
+    padding: 30px;
+    background-color: #F2FBF9;
+    border: 1px solid #00A783;
+    border-radius: 16px;
+    max-width: 618px;
+  }
+
+  &__start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & .ratesImport__title {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 3px;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding-right: 40px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+
+    &Error {
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 6px;
+      span {
+        cursor: pointer;
+        color:#00a1df;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+  &__errorContainer {
+    padding: 5px;
+  }
+
+  &__button {
+    flex-shrink: 0;
+  }
+
+  &__upload {
+
+
+    .inputFile {
+      margin-left: auto;
+      max-width: 205px;
+    }
+    
+    &Action {
+      text-align: right;
+      margin-top: 20px;
+    }
+
+    &Fail {
+
+      & .ratesImport__text {
+        display: none;
+      }
+
+      & .ratesImport__textError{
+        display: block;
+      }
+
+      & .ratesImport__textError span::before {
+        content: '●';
+        position: absolute;
+        top: 4px;
+        left: -1px;
+        font-size: 8px;
+        color: red;
+      }
+
+      & .ratesImport__textWarning span::before {
+        color: #ffd800;
+      }
+
+      & .ratesImport__progressError {
+        display: flex;
+        gap: 6px;
+        align-items: flex-start;
+      }
+
+      & .ratesImport__progressFill {
+        background-color: #E4003A;
+      }
+
+      & .ratesImport__progressFillWarning {
+        background-color: #ffd800;
+      }
+    }
+  }
+
+  &__progress {
+    margin-top: 23px;
+
+    &Bar {
+      background: #FFF;
+      border-radius: 3px;
+      overflow: hidden;
+      height: 4px;
+      margin-bottom: 12px;
+    }
+
+    &Fill {
+      background-color: #00A783;
+      border-radius: inherit;
+      height: inherit;
+    }
+
+    &FillWarning {
+      background-color: #00A783;
+      border-radius: inherit;
+      height: inherit;
+    }
+
+    &Error {
+      color: #E4003A;
+      margin-top: 14px;
+      display: none;
+
+      & .icon {
+        margin-right: 6px;
+        margin-top: -3px;
+      }
+    }
+
+    &Warning {
+      color: #ffd800;
+    }
+  }
+}
+
+.inputFile {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+
+    & .inputFile__button {
+      background-color: #00CB9F;
+    }
+  }
+
+  &:active {
+
+    & .inputFile__button {
+      background-color: #00795F;
+    }
+  }
+
+  &__field {
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,117 @@
+.loader {
+  width: 72px;
+  height: 72px;
+  background-color: red;
+  position: relative;
+
+  &__item1,
+  &__item2,
+  &__item3,
+  &__item4 {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+  }
+
+  &__item1 {
+    top: 0;
+    left: 0;
+    background-color: #3C3C3B;
+  }
+
+  &__item2 {
+
+    top: 0;
+    right: 0;
+    background-color: #B3E5DA;
+  }
+
+  &__item3 {
+    bottom: 0;
+    right: 0;
+    background-color: #3C3C3B;
+  }
+
+  &__item4 {
+    bottom: 0;
+    left: 0;
+    background-color: #00A783;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle {
+  position: relative;
+  z-index: 2;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  animation-name: rotation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  &__item1,
+  &__item2,
+  &__item3,
+  &__item4 {
+    position: absolute;
+    z-index: 3;
+    width: 36px;
+    height: 36px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &__item1 {
+    top: 0;
+    left: 0;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 0;
+    background-color: #00A783;
+  }
+
+  &__item2 {
+    top: 0;
+    right: 0;
+    border-top-right-radius: 100%;
+    background-color: #F2FBF9;
+  }
+
+  &__item3 {
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 100%;
+    background-color: #99DCCD;
+  }
+
+  &__item4 {
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 100%;
+    background-color: #B3E5DA;
+  }
+}

@@ -1,0 +1,82 @@
+.form__item{
+  position: relative;
+  margin-top: 22px;
+}
+
+.form__item:first-child {
+  margin-top: 0;
+}
+
+.form__item.isInvalid .input,
+.form__item.isInvalid .textarea,
+.form__item.isInvalid .select,
+.form__item.isInvalid .select2Container_default,
+.form__item.isInvalid .select2Selection_single{
+  border-color: #E4003A;
+}
+
+.form__item.isInvalid .form__error{
+  display: block;
+}
+
+.form__item_flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding-top: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: calc(15 / 12);
+  color: #F9344B;
+  display: none;
+}
+
+.form__button {
+  width: 100%;
+}
+
+.formScan {
+  margin-top: 40px;
+}
+
+.formScan__image{
+  max-width: 225px;
+  margin-bottom: 38px;
+}
+
+.formScan__item {
+}
+
+.formScan .input{
+  max-width: 101px;
+}
+
+.formScan__button {
+  margin-top: 32px;
+  max-width: 240px;
+}
+
+
+.imageBox__image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.label {
+  color: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: calc(18 / 14);
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}

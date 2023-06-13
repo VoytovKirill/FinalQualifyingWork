@@ -1,0 +1,36 @@
+.dropdown {
+
+    &__button {
+        background: none;
+        padding: 5px 0;
+        font-weight: 500;
+
+        @media (--L) {
+            margin-left: 8px;
+        }
+
+        &:hover {
+
+            & svg {
+                border-color: #00A783;
+            }
+        }
+
+        &_active {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__icon {
+        color: #00A783;
+        background-color: #E6F7F3;
+        border-radius: 100%;
+        border: 1px solid transparent;
+        transition-property: border-color;
+        transition-duration: .25s;
+        transition-timing-function: ease;
+        box-sizing: border-box;
+    }
+}

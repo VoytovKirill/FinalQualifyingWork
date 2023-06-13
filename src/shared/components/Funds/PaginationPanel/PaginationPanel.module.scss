@@ -1,0 +1,73 @@
+@import '../../../../assets/styles/reusable.scss';
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  align-items: center;
+  @include box;
+
+  &__pagination {
+    display: flex;
+  }
+
+  &__btn {
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 36px;
+    margin-left: 30px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:disabled {
+      display: none;
+    }
+    &_stepper{
+      margin-right: 0;
+
+      &:disabled{
+        display: flex;}
+    }
+  }
+
+  &__text {
+    font-family: var(--font-montserrat);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: var(--dark-shade);
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px 14px;
+    width: 56px;
+    height: 36px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #D0D4D8;
+    border-radius: 8px;
+
+    &:focus,
+    &:active {
+      border: 1px solid #00A783;
+
+      outline: 2px solid #B3E5DA;
+    }
+  }
+
+  &__stepper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}

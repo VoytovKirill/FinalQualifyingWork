@@ -1,0 +1,214 @@
+@import 'assets/styles/reusable.scss';
+
+.rates {
+  margin-top: 42px;
+  font-family: Montserrat;
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include title;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    flex-grow: 1;
+
+    &_changes {
+      width: 632px;
+      max-width: 632px;
+      flex-shrink: 0;
+      margin-left: 103px;
+    }
+  }
+}
+
+.label {
+  color: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: calc(18 / 14);
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  font-family: Montserrat;
+}
+
+.input {
+  background-color: #fff;
+  border: 1px solid #D0D4D8;
+  border-radius: 8px;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  height: 44px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 10px 12px 10px;
+  font-family: Montserrat;
+  transition-property: border-color, color, background-color, box-shadow;
+  transition-duration: .25s;
+  transition-timing-function: ease;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #b3e5da;
+    border-color: #00A783;
+  }
+
+  &::placeholder {
+    color: #D0D4D8;
+  }
+}
+
+.form {
+
+  &__item {
+    position: relative;
+    margin-top: 22px;
+    min-height: 42px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &.isInvalid {
+
+      & .input,
+      & .textarea,
+      & .select .select2-container--default .select2-selection--single {
+        border-color: #E4003A;
+      }
+
+      & .form__error {
+        display: block;
+      }
+    }
+
+    &_flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+  }
+
+  &__inputBox {
+
+    & .input {
+      padding-right: 50px;
+    }
+
+  }
+
+  &__inputButton {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+  }
+
+  &__inputIcon {
+    position: absolute;
+    top: 13px;
+    right: 14px;
+  }
+
+  &__error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding-top: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: calc(15 / 12);
+    color: #F9344B;
+    display: none;
+  }
+}
+
+.formRateTax {
+  margin-top: 14px;
+  background: #F2FBF9;
+  border: 1px solid #00A783;
+  border-radius: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 30px;
+
+  &__item {
+
+    &.isInvalid {
+
+      & .input {
+        border-color: transparent;
+      }
+    }
+  }
+
+  &__number {
+    width: 77px;
+  }
+
+  &__calendar {
+    width: 191px;
+  }
+
+  & .input {
+    height: 36px;
+    border-color: transparent;
+
+    &.isInvalid {
+      border-color: #E4003A;
+    }
+  }
+
+  &__text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  & .label {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  &__action {
+    text-align: right;
+    margin-top: 70px;
+  }
+
+  & .form__inputButton {
+    top: 6px;
+    right: 11px;
+    color: #3C3C3B;
+    padding: 0;
+  }
+
+  & .form__error {
+    padding-top: 24px;
+    text-align: right;
+  }
+}
+
+.ctrlButton {
+  background-color: #FFF;
+  color: #00A783;
+  border: 1px solid #00A783;
+  width: auto;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}

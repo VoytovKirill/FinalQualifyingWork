@@ -1,0 +1,11 @@
+.item__role {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    padding-left: 23px !important;
+    justify-content: space-between !important;
+
+    & .role:first-of-type {
+        width: 100% !important;
+    }
+}

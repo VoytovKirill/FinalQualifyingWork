@@ -1,0 +1,43 @@
+.toast {
+    background: #FFFFFF;
+    border: 1px solid #00A783;
+    box-shadow: 0px 0px 9px rgba(0, 165, 129, 0.45) !important;
+    border-radius: 8px;
+    padding: 14px 24px !important;
+    height: 78px;
+    font-weight: 500;
+
+    & button {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        padding: 11px 18px;
+        margin-left: 40px;
+    }
+
+    &__progress {
+        background-color: #00A783;
+    }
+}
+
+.toast__body {
+    background: #FFFFFF;
+    font-family: var(--font-montserrat);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #000000;
+    padding: 0;
+
+    & p {
+        display: block;
+        margin: 0;
+        margin-left: 20px;
+    }
+}
+
+.toastContainer {
+    background: transparent;
+    min-width: max-content;
+}

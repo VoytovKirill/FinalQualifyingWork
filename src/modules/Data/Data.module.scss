@@ -1,0 +1,75 @@
+@import '../../assets/styles/reusable.scss';
+
+.screen {
+  padding-top: 120px;
+  min-width: 1290px;
+}
+
+.wrapper{
+  position: relative;
+}
+
+.pageHeading {
+
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {}
+
+  &__button {}
+
+  &__tags {
+    padding-left: 5px;
+
+    &-item {
+      display: inline-block;
+      vertical-align: middle;
+      background: #F2FBF9;
+      border-radius: 29px;
+      padding-top: 8px;
+      padding-bottom: 10px;
+      padding-left: 24px;
+      padding-right: 24px;
+      margin-left: 8px;
+      margin-right: 8px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    &Item {
+      padding: 10px 24px;
+      color: #99DCCD;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 3px solid #99DCCD;
+      transition-property: background-color, color;
+      transition-duration: .25s;
+      transition-timing-function: ease;
+
+      &:hover {
+        color: #33443F;
+      }
+
+      &_isActive {
+        border-bottom-color: #00A783;
+        color: #33443F;
+      }
+    }
+  }
+}
+
+.salary {
+  &__button {
+    right: 0;
+    padding-right: 0;
+    position: absolute;
+  }
+}

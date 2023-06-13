@@ -1,0 +1,19 @@
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+  
+    .icon--fill {
+        fill: currentcolor;
+    }
+  
+    .icon--stroke {
+        stroke: currentcolor;
+    }
+  }
+
+.ctrl-button--icon {
+    border-radius: 100%;
+    color: #00A783;
+    background-color: #E6F7F3;
+    padding: 0;
+}

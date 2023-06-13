@@ -1,0 +1,52 @@
+$mobileFirst: false;
+$develop: false;
+$box: false;
+
+$default-font: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI",  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-montserrat: "Montserrat", $default-font;
+
+
+
+:root {
+  --bg: #fff;
+  --dark-shade: #3C3C3B;
+
+  --accent: #0070f1;
+  --accentDark: #0754d1;
+  --accentDarker: #0347a3;
+  --accentDarkest: #003470;
+
+  --fade: #99DCCD;
+  --fadeLight: #B3E5DA;
+  --fadeLighter: #E6F7F3;
+  --sfadeLightest: #F2FBF9;
+
+  --secondaryFade: #FCE5EB;
+  --thirdFade: #FDE8BD;
+  --fourthFade: #B2E2F5;
+  --fifthFade: #F6B2C3;
+
+  --auxiliaryLight: #00CB9F;
+  --auxiliaryDark: #00795F;
+
+  --warning: #E4003A;
+  --accentGreen: #00A783;
+  --accentYellow: #FAB526;
+  --accentBlue: #00A1DF;
+
+
+  --shadeDark: #3C3C3B;
+  --shadeLight: #B7BABD;
+  --shadeLighter: #B7BABD ;
+  --shadeLightest:#D0D4D8 ;
+
+  --default-font: -apple-system, BlinkMacSystemFont,'Roboto',  "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-montserrat: "Montserrat", var(--default-font);
+
+  --scrollbarBg: #F8F7F7;
+  --scrollbarThumb: #B3E5DA;
+  --scrollbarWidth: 8px;
+  --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 2);
+}
+
+:root {}
